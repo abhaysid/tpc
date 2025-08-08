@@ -1,0 +1,108 @@
+/* Setting the html for size for ease of rem units while maintaining responsive fluidity */
+
+html {
+  /* 62.5% of 16px = 10px, 1rem = 10px */
+  font-size: 62.5%;
+}
+
+/* To change the font loading type  */
+
+:root {
+  --font-loading-style: swap;
+}
+
+/* Fonts Import */
+
+@font-face {
+  font-family: "Geist";
+  src: url("./assets/fonts/Geist-Bold.woff2") format("woff2"),
+    url("./assets/fonts/Geist-Bold.woff") format("woff");
+  font-weight: bold;
+  font-display: var(--font-loading-style);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("./assets/fonts/Satoshi-Regular.woff2") format("woff2"),
+    url("./assets/fonts/Satoshi-Regular.woff") format("woff");
+  font-weight: normal;
+  font-display: var(--font-loading-style);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("../assets/fonts/Satoshi-Bold.woff2") format("woff2"),
+    url("../assets/fonts/Satoshi-Bold.woff") format("woff");
+  font-weight: bold;
+  font-display: var(--font-loading-style);
+  font-style: normal;
+}
+
+/* Default Font */
+
+body {
+  font-family: "Satoshi-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.sub-heading-1,
+.sub-heading-2 {
+  font-family: "Geist", sans-serif;
+  font-weight: bold;
+  color: var(--color-dark);
+}
+
+h1 {
+  font-size: 7.2rem;
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: 6rem;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 3rem;
+  line-height: 1.25;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+/* Other Style Identified kept for future reference */
+
+.style-1 {
+  font-family: "Satoshi", sans-serif;
+  font-weight: normal;
+  font-size: 1.8rem;
+}
+
+.style-2 {
+  font-family: "Satoshi", sans-serif;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.style-3 {
+  font-family: "Geist", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.style-4 {
+  font-family: "Geist", sans-serif;
+  font-weight: bold;
+  font-size: 2.4rem;
+}
