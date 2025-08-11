@@ -1,0 +1,23 @@
+/* Buttons */
+
+.btn {
+  width: 22.4rem;
+  height: 5.6rem;
+  background-color: var(--color-pure-white);
+  border: 1px solid var(--color-dark-15);
+  border-radius: 5.6rem;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 0.75rem;
+  padding-left: 2.8rem;
+  margin: 0.5rem;
+}
+
+/* To be finalized later during the development */
+@media screen and (max-width: 800px) {
+  .btn-stretched {
+    width: 100%;
+  }
+}
