@@ -1,0 +1,19 @@
+/* List */
+.list__item {
+  margin: 3rem 0;
+}
+
+.list__item::before {
+  content: url(../assets/images/tick.svg);
+  background-color: var(--color-primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 3rem;
+  padding-top: 0.3rem;
+  margin-right: 2rem;
+  position: relative;
+  top: 0.4rem;
+}
