@@ -24,3 +24,16 @@ p {
 img {
   width: 100%;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}

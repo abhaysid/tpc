@@ -1,0 +1,6 @@
+/* Wrapper keeps the content center by leaving left and right margin */
+
+.wrapper {
+  width: clamp(300px, calc(76.66667vw + 40px), 1280px);
+  margin: auto;
+}

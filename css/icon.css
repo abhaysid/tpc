@@ -1,0 +1,39 @@
+/* Icons */
+
+/* Generally all icons are 24px by 24px */
+.icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.icon-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  height: 6rem;
+  width: 6rem;
+  font-weight: bold;
+}
+
+.icon-container--round {
+  border-radius: 3rem;
+}
+
+.icon-container--small {
+  height: 3.6rem;
+  width: 3.6rem;
+}
+
+.icon-container--small .icon {
+  height: 2rem;
+  width: 2rem;
+}
+
+.icon-primary {
+  background-color: var(--color-primary);
+}
+
+.icon-secondary {
+  background-color: var(--color-secondary);
+}
