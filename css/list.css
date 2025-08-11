@@ -1,5 +1,6 @@
 /* List */
 .list__item {
+  display: flex;
   margin: 3rem 0;
 }
 
@@ -9,6 +10,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   height: 3rem;
   width: 3rem;
   border-radius: 3rem;

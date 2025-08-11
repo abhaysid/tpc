@@ -1,0 +1,15 @@
+/* Media Card */
+
+.media-card {
+  border: 1px solid var(--color-dark-15);
+  border-radius: 2rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.media-card__img {
+  margin-right: 2rem;
+}
+.media-card__content {
+}
