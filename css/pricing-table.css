@@ -1,0 +1,40 @@
+/* Pricing Table */
+
+.pricing-table {
+  background-color: var(--color-primary);
+  border-radius: 3rem;
+  padding: 1rem;
+}
+
+.table__heading {
+  margin: 2rem 0 3rem 0;
+  text-align: center;
+}
+
+.table__row {
+  background-color: var(--color-pure-white);
+  border-radius: 2rem;
+  padding: 2rem 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 1rem;
+}
+
+.table__cell {
+  margin-bottom: 2rem;
+}
+
+.table__label {
+  margin-bottom: 1rem;
+}
+
+.table__data {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 850px) {
+  .table__row {
+    grid-template-columns: 1fr;
+  }
+}
