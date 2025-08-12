@@ -1,0 +1,44 @@
+/* Testimonial Card */
+.temp {
+  width: 406px;
+}
+
+.testimonial-card {
+  padding: 1rem;
+  border: 1px solid var(--color-dark-15);
+  border-radius: 2rem;
+}
+
+.testimonial-card__testimony {
+  padding: 2rem;
+}
+
+.testimonial-card__author {
+  display: flex;
+  background-color: var(--color-primary);
+  align-items: center;
+  border-radius: 2rem;
+}
+
+.testimonial-card__author-image {
+  width: 6rem;
+  height: 6rem;
+  margin: 2rem;
+}
+
+.testimonial-card__author-image img {
+  border-radius: 1.5rem;
+}
+
+.testimonial-card__author-details {
+}
+
+.testimonial-card__author-name {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.testimonial-card__author-designation {
+  font-size: 1.4rem;
+}
