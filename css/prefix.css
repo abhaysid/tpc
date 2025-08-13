@@ -37,3 +37,7 @@ a:visited {
 li {
   list-style: none;
 }
+
+body {
+  background-color: var(--color-white);
+}

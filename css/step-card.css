@@ -1,0 +1,17 @@
+/* Step Card */
+
+.step-card {
+  border: 1px solid var(--color-dark-15);
+  padding: 3rem;
+  border-radius: 2rem;
+}
+
+.step-card__label {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.step-card__footer-notes {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
