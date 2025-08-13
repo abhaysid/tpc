@@ -1,0 +1,37 @@
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const sectionMapping = {
+      "section-1": "section-1-content",
+      "section-2": "section-3-content", // special mapping
+      "section-3": "section-2-content", // special mapping
+      "section-4": "section-4-content",
+    };
+
+    const headers = document.querySelectorAll(".sec-head");
+    const bodies = document.querySelectorAll(".sec-body");
+
+    function showContent(sectionId) {
+      // Hide all bodies
+      bodies.forEach((b) => (b.style.display = "none"));
+      // Remove active class from headers
+      headers.forEach((h) => h.classList.remove("active"));
+      // Show mapped body
+      const contentId = sectionMapping[sectionId];
+      if (contentId) {
+        document.getElementById(contentId).style.display = "block";
+      }
+      // Set active header
+      document.getElementById(sectionId).classList.add("active");
+    }
+
+    // Attach click handlers
+    headers.forEach((header) => {
+      header.addEventListener("click", function () {
+        showContent(this.id);
+      });
+    });
+
+    // Show default
+    showContent("section-1");
+  });
+</script>

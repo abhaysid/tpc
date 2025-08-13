@@ -4,6 +4,7 @@
   border: 1px solid var(--color-dark-15);
   border-radius: 3rem;
   padding: 3rem;
+  margin: 1rem;
 }
 
 .faq-card__header {
@@ -25,6 +26,11 @@
   border: 1px solid var(--color-dark-15);
   border-radius: 3rem;
   padding: 0.8rem;
+  margin-left: 2rem;
+}
+
+.faq-card__toggle-icon:hover {
+  cursor: pointer;
 }
 
 .faq-card__body {
