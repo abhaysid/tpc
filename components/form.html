@@ -1,0 +1,57 @@
+<form action="" method="">
+  <label class="name"
+    >Name*
+    <input
+      type="text"
+      id="name"
+      name="name"
+      placeholder="Enter Your Name"
+      required
+      minlength="3"
+    />
+  </label>
+  <label
+    >Phone*
+    <input
+      type="tel"
+      pattern="[0-9+ ]+"
+      id="tel"
+      name="phone"
+      placeholder="Enter Your Phone Number"
+      required
+      minlength="14"
+      maxlength="14"
+      value="+91 "
+    />
+  </label>
+  <label
+    >Subject
+    <input
+      type="text"
+      id="subject"
+      name="subject"
+      placeholder="Enter Subject"
+      maxlength="100"
+    />
+  </label>
+  <label
+    >Message
+    <textarea
+      id="message"
+      name="message"
+      placeholder="Message..."
+      rows="3"
+      maxlength="350"
+    ></textarea>
+  </label>
+  <button type="submit" class="btn btn-stretched">
+    Send Message
+    <span
+      class="icon-container icon-primary icon-container--round icon-container--small"
+    >
+      <svg class="icon">
+        <use xlink:href="./assets/icons/sprite.svg#long-arrow-right"></use>
+      </svg>
+    </span>
+  </button>
+</form>
