@@ -1,6 +1,6 @@
 @import "normalize.css";
 @import "prefix.css";
-@import "colors.css";
+@import "variables.css";
 @import "typography.css";
 @import "wrapper.css";
 @import "icon.css";
@@ -16,3 +16,4 @@
 @import "form.css";
 @import "glide.core.css";
 @import "glide.css";
+@import "footer.css";
