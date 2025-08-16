@@ -13,6 +13,32 @@
   padding-right: 0.75rem;
   padding-left: 2.8rem;
   margin: 0.5rem;
+  transform: border 0.3s ease-in-out;
+}
+
+.btn:hover {
+  cursor: pointer;
+  border: 1px solid var(--color-dark-25);
+}
+
+.btn:hover .icon {
+  animation: shake 0.5s ease-in-out infinite;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  50%,
+  90% {
+    transform: translateX(-1px);
+  }
+  30%,
+  70% {
+    transform: translateX(1px);
+  }
 }
 
 /* To be finalized later during the development */
