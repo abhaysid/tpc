@@ -15,12 +15,12 @@
   background-color: var(--color-primary);
   align-items: center;
   border-radius: 2rem;
+  padding: 2rem;
 }
 
 .testimonial-card__author-image {
-  width: 6rem;
-  height: 6rem;
-  margin: 2rem;
+  min-width: 6rem;
+  min-height: 6rem;
 }
 
 .testimonial-card__author-image img {
@@ -28,6 +28,7 @@
 }
 
 .testimonial-card__author-details {
+  margin-left: 2rem;
 }
 
 .testimonial-card__author-name {

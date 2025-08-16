@@ -1,3 +1,4 @@
+// Collapsible -> implementation of toggling between expand and collapse on click
 const collapsibles = document.querySelectorAll(".collapsible");
 collapsibles.forEach((item) =>
   item.addEventListener("click", function () {
@@ -5,6 +6,7 @@ collapsibles.forEach((item) =>
   })
 );
 
+// FAQ Section display active section content as selected
 document.addEventListener("DOMContentLoaded", function () {
   const headers = document.querySelectorAll(".sec-head");
   const contents = document.querySelectorAll(".sec-body");
@@ -26,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Phone Number in form component auto fill "+91 " and make it undeletable
 const tel = document.getElementById("tel");
 tel.addEventListener("focus", () => {
   if (!tel.value.startsWith("+91 ")) {
