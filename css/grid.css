@@ -1,0 +1,11 @@
+.media-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2vw;
+}
+
+@media screen and (max-width: 500px) {
+  .media-card-grid {
+    gap: 1rem;
+  }
+}
