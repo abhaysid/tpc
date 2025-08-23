@@ -1,6 +1,7 @@
 @import "normalize.css";
 @import "prefix.css";
 @import "variables.css";
+@import "svg-icon.css";
 @import "typography.css";
 @import "wrapper.css";
 @import "icon.css";
@@ -22,3 +23,4 @@
 @import "big-media-card.css";
 @import "cta-media-card.css";
 @import "hero-badge.css";
+@import "info-graph-grid.css";

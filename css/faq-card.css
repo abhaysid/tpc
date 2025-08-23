@@ -17,7 +17,7 @@
 }
 
 .faq-card__toggle-icon {
-  content: url(../assets/images/plus.svg);
+  content: var(--icon-plus);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,5 +60,5 @@
 }
 
 .collapsible--expanded .faq-card__toggle-icon {
-  content: url(../assets/images/minus.svg);
+  content: var(--icon-minus);
 }

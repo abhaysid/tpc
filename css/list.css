@@ -6,7 +6,7 @@
 }
 
 .list__item::before {
-  content: url(../assets/images/tick.svg);
+  content: var(--icon-tick);
   background-color: var(--color-primary);
   display: inline-flex;
   align-items: center;

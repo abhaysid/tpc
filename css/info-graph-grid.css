@@ -1,0 +1,14 @@
+/* Info Graphic Card Grid Display */
+
+.info-graph-grid {
+  line-height: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.info-graph-grid__card {
+  width: 35rem;
+}
