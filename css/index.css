@@ -4,6 +4,7 @@
 @import "svg-icon.css";
 @import "typography.css";
 @import "wrapper.css";
+@import "collapsible.css";
 @import "icon.css";
 @import "list.css";
 @import "button.css";
@@ -11,7 +12,7 @@
 @import "testimonial-card.css";
 @import "faq-badge.css";
 @import "faq-card.css";
-@import "pricing-table.css";
+@import "table.css";
 @import "step-card.css";
 @import "faq-block.css";
 @import "form.css";
@@ -19,8 +20,9 @@
 @import "glide.css";
 @import "footer.css";
 @import "nav.css";
-@import "grid.css";
+@import "media-card-grid.css";
 @import "big-media-card.css";
 @import "cta-media-card.css";
-@import "hero-badge.css";
+@import "plain-badge.css";
 @import "info-graph-grid.css";
+@import "form-landing-page.css";

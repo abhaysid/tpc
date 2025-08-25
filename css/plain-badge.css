@@ -1,6 +1,6 @@
 /* Hero Badge */
 
-.hero-badge {
+.plain-badge {
   display: inline-block;
   background-color: var(--color-pure-white);
   border: 1px solid var(--color-primary);

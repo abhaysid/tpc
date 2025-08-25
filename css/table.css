@@ -1,6 +1,6 @@
-/* Pricing Table */
+/* Table */
 
-.pricing-table {
+.table {
   background-color: var(--color-primary);
   border-radius: 3rem;
   padding: 1rem;
@@ -24,16 +24,16 @@
   margin-bottom: 2rem;
 }
 
-.table__label {
+.cell__label {
   margin-bottom: 1rem;
 }
 
-.table__data {
+.cell__data {
   font-size: 1.8rem;
   font-weight: bold;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 900px) {
   .table__row {
     grid-template-columns: 1fr;
   }

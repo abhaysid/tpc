@@ -1,12 +1,22 @@
+<!-- CALL TO ACTION Medial Card - Primary Type & Secondary Type -->
 <div class="cta-media-card secondary">
+  <!-- Class="primary" sets background color to primary and image position to left -->
+  <!-- Class="secondary" sets background color to secondary and image position to right -->
   <div class="cta-media-card__image">
-    <img
-      src="./assets/images/the-postal-company-post-card-solutions@2x.webp"
-      alt=""
-    />
+    <picture>
+      <source
+        type="image/webp"
+        srcset="./assets/images/post-card-marketing-benefits.webp"
+      />
+      <source
+        type="image/jpg"
+        srcset="./assets/images/post-card-marketing-benefits.jpg"
+      />
+      <img src="./assets/images/post-card-marketing-benefits.jpg" alt="" />
+    </picture>
   </div>
   <div class="cta-media-card__content">
-    <h3 class="cta-media-card__content__heading">
+    <h3 class="cta-media-card__content__heading cap">
       The Postal Company's <br />
       Postcard Solution
     </h3>
@@ -21,9 +31,7 @@
       <div class="btn-group">
         <button class="btn">
           Get Started
-          <span
-            class="icon-container icon-primary icon-container--round icon-container--small"
-          >
+          <span class="icon-container round small primary">
             <svg class="icon">
               <use
                 xlink:href="./assets/icons/sprite.svg#long-arrow-right"
@@ -33,9 +41,7 @@
         </button>
         <button class="btn">
           Schedule a Call
-          <span
-            class="icon-container icon-secondary icon-container--round icon-container--small"
-          >
+          <span class="icon-container round small secondary">
             <svg class="icon">
               <use xlink:href="./assets/icons/sprite.svg#call"></use>
             </svg>

@@ -4,7 +4,7 @@
   width: 22.4rem;
   height: 5.6rem;
   background-color: var(--color-pure-white);
-  border: 1px solid var(--color-dark-15);
+  border: var(--border);
   border-radius: 5.6rem;
   font-weight: bold;
   display: inline-flex;
@@ -15,28 +15,14 @@
   transform: border 0.3s ease-in-out;
 }
 
-.btn-group {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  align-content: stretch;
-  container-type: inline-size;
-  container-name: btn-group;
-}
-
-@container btn-group (max-width: 45.8rem) {
-  .btn-group .btn {
-    flex-grow: 1;
-  }
-}
-
 .btn:hover {
   cursor: pointer;
-  border: 1px solid var(--color-dark-25);
+  border: var(--border-hover);
 }
 
 .btn:hover .icon {
   animation: shake 0.5s ease-in-out infinite;
+  animation-delay: 0.3s;
 }
 
 @keyframes shake {
@@ -52,5 +38,24 @@
   30%,
   70% {
     transform: translateX(1px);
+  }
+}
+
+/* Two buttons grouped together */
+
+.btn-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-content: stretch;
+  container-type: inline-size;
+  container-name: btn-group;
+}
+
+@container btn-group (max-width: 45.8rem) {
+  /* width = (22.4rem of button 1) + (1rem of flex-gap) + (22.4rem button) = 45.8rem
+  Checks the container width to fit 2 buttons in a row */
+  .btn-group .btn {
+    flex-grow: 1;
   }
 }

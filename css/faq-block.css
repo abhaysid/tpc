@@ -8,30 +8,29 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-bottom: 5rem;
 }
+
+/* .faq-badge is separate component, hence not included here */
 
 .faq-content {
-  margin-top: 5rem;
 }
 
-.sec-body {
-  display: none;
+.faq-content__cards {
+  max-height: 0;
+  overflow: hidden;
   opacity: 0;
-  transition-property: opacity;
-  transition-duration: 1s;
-  transition-behavior: allow-discrete;
+  transition: opacity 0.5s ease-in-out 0.2s;
 }
 
-.active-content {
-  display: block;
+.faq-content__cards.active {
+  max-height: 100%;
   opacity: 1;
-  @starting-style {
-    opacity: 0;
-  }
 }
 
-@media screen and (max-width: 725px) {
+@media screen and (max-width: 900px) {
   .faq-badges {
+    margin-bottom: 3rem;
     width: 100%;
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -41,9 +40,5 @@
 
   .faq-badges .faq-badge {
     flex-shrink: 0;
-  }
-
-  .faq-content {
-    margin-top: 3rem;
   }
 }

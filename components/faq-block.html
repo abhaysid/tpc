@@ -1,15 +1,24 @@
+<!-- FAQ Block -->
 <div class="faq-block">
   <div class="faq-badges">
-    <div id="section-1" class="sec-head faq-badge faq-active-badge">
+    <!-- section-1 corresponds to section-1-content -->
+    <!-- active classes are applied to both section-(No.) and section-(No.)-content -->
+    <!-- faq.badge which is active gets its active style in css -->
+    <!-- all section-(No.)-content are hidden and only active is displayed -->
+    <div id="section-1" class="sec-head faq-badge cap active">
       General Questions
     </div>
-    <div id="section-2" class="sec-head faq-badge">Pricing & Orders</div>
-    <div id="section-3" class="sec-head faq-badge">Design & Production</div>
-    <div id="section-4" class="sec-head faq-badge">Logistics & Delivery</div>
-    <div id="section-5" class="sec-head faq-badge">Results & Measurement</div>
+    <div id="section-2" class="sec-head faq-badge cap">Pricing & Orders</div>
+    <div id="section-3" class="sec-head faq-badge cap">Design & Production</div>
+    <div id="section-4" class="sec-head faq-badge cap">
+      Logistics & Delivery
+    </div>
+    <div id="section-5" class="sec-head faq-badge cap">
+      Results & Measurement
+    </div>
   </div>
   <div class="faq-content">
-    <div id="section-1-content" class="sec-body active-content">
+    <div id="section-1-content" class="sec-body faq-content__cards active">
       <div class="faq-card collapsible collapsible--expanded">
         <header class="faq-card__header">
           <span class="faq-card__title FS-G-B-20-16">
@@ -27,7 +36,7 @@
         </div>
       </div>
     </div>
-    <div id="section-2-content" class="sec-body">
+    <div id="section-2-content" class="sec-body faq-content__cards">
       <div class="faq-card collapsible collapsible--expanded">
         <header class="faq-card__header">
           <span class="faq-card__title FS-G-B-20-16">
@@ -45,7 +54,7 @@
         </div>
       </div>
     </div>
-    <div id="section-3-content" class="sec-body">
+    <div id="section-3-content" class="sec-body faq-content__cards">
       <div class="faq-card collapsible collapsible--expanded">
         <header class="faq-card__header">
           <span class="faq-card__title FS-G-B-20-16">
@@ -63,7 +72,7 @@
         </div>
       </div>
     </div>
-    <div id="section-4-content" class="sec-body">
+    <div id="section-4-content" class="sec-body faq-content__cards">
       <div class="faq-card collapsible collapsible--expanded">
         <header class="faq-card__header">
           <span class="faq-card__title FS-G-B-20-16">
@@ -81,7 +90,7 @@
         </div>
       </div>
     </div>
-    <div id="section-5-content" class="sec-body">
+    <div id="section-5-content" class="sec-body faq-content__cards">
       <div class="faq-card collapsible collapsible--expanded">
         <header class="faq-card__header">
           <span class="faq-card__title FS-G-B-20-16">

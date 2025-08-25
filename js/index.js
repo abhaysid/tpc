@@ -6,7 +6,7 @@ collapsibles.forEach((item) =>
   })
 );
 
-// FAQ Section display active section content as selected
+// Section display active section content as selected
 document.addEventListener("DOMContentLoaded", function () {
   const headers = document.querySelectorAll(".sec-head");
   const contents = document.querySelectorAll(".sec-body");
@@ -14,16 +14,27 @@ document.addEventListener("DOMContentLoaded", function () {
   headers.forEach((header) => {
     header.addEventListener("click", function () {
       // Remove active classes from all headers & contents
-      headers.forEach((h) => h.classList.remove("faq-active-badge"));
-      contents.forEach((c) => c.classList.remove("active-content"));
+      headers.forEach((h) => h.classList.remove("active"));
+      contents.forEach((c) => c.classList.remove("active"));
 
       // Add active classes to clicked header & its matching content
-      this.classList.add("faq-active-badge");
+      this.classList.add("active");
       const contentId = this.id + "-content";
       const contentElement = document.getElementById(contentId);
       if (contentElement) {
-        contentElement.classList.add("active-content");
+        contentElement.classList.add("active");
       }
+    });
+  });
+});
+
+// FAQ badges scroll to center on clicked
+document.querySelectorAll(".faq-badge").forEach((badge) => {
+  badge.addEventListener("click", () => {
+    badge.scrollIntoView({
+      behavior: "smooth",
+      block: "nearest",
+      inline: "center",
     });
   });
 });

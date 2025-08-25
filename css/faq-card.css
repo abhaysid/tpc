@@ -1,7 +1,7 @@
 /* FAQ Card */
 
 .faq-card {
-  border: 1px solid var(--color-dark-15);
+  border: var(--border);
   border-radius: 3rem;
   padding: 3rem;
   margin: 1rem;
@@ -23,7 +23,7 @@
   justify-content: center;
   height: 5rem;
   width: 5rem;
-  border: 1px solid var(--color-dark-15);
+  border: var(--border);
   border-radius: 3rem;
   padding: 0.8rem;
   margin-left: 2rem;
@@ -31,29 +31,18 @@
 
 .faq-card__toggle-icon:hover {
   cursor: pointer;
+  border: var(--border-hover);
 }
 
 .faq-card__body {
-  border-top: 1px solid var(--color-dark-15);
+  border-top: var(--border);
 }
 
 .faq-card__text {
   margin-top: 3rem;
 }
 
-/* Collapsible */
-
-.collapsible__content {
-  max-height: 0;
-  overflow: hidden;
-  opacity: 0;
-  transition: all 0.3s;
-}
-
-.collapsible--expanded .collapsible__content {
-  max-height: 100%;
-  opacity: 1;
-}
+/* collapsible on expanded additional styles */
 
 .collapsible--expanded .faq-card__body {
   margin-top: 3rem;

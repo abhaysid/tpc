@@ -1,4 +1,5 @@
-/* List */
+/* List: Default Style */
+
 .list__item {
   display: flex;
   align-items: center;

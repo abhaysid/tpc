@@ -1,3 +1,6 @@
+/* SVG icons used in css which couldn't fetch from sprite.svg */
+/* please note same below declared svs are declared in sprite.svg as well, if in case needed in future develop, if not used delete after review */
+
 :root {
   --icon-minus: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 12H18" stroke="%2326292F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>');
   --icon-plus: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 12H18" stroke="%2326292F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 18V6" stroke="%2326292F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>');

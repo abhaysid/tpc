@@ -1,32 +1,9 @@
 /* Form */
+/* grid enabled with no rows and columns, basic styling applied */
 
 form {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  column-gap: 3rem;
-}
-
-form > * {
-  grid-column: 1 / -1;
-}
-
-form > :nth-child(1) {
-  grid-column: 1 / 2;
-}
-
-form > :nth-child(2) {
-  grid-column: 2 / 3;
-}
-
-@media screen and (max-width: 800px) {
-  form {
-    grid-template-columns: 1fr;
-  }
-
-  form > :nth-child(2) {
-    grid-column: 1 / 2;
-  }
+  gap: 2rem 3rem;
 }
 
 label {
@@ -35,8 +12,7 @@ label {
   color: var(--color-dark);
 }
 
-input,
-textarea {
+label > * {
   background-color: var(--color-pure-white);
   border: 0;
   border-radius: 1rem;
@@ -46,21 +22,15 @@ textarea {
   margin-top: 0.75rem;
 }
 
-input::placeholder,
-textarea::placeholder {
+form ::placeholder {
   color: var(--color-dark-50);
-  font-size: 1.6rem;
 }
 
-input:focus {
-  outline: 2px solid var(--color-dark-15);
+label > *:focus {
+  outline: var(--outline-focus);
 }
 
-textarea:focus {
-  outline: 2px solid var(--color-dark-15);
-}
-
-input:not(:placeholder-shown):invalid {
+label > *:not(:placeholder-shown):invalid {
   outline-color: var(--color-error);
 }
 
@@ -69,11 +39,6 @@ textarea {
 }
 
 form button {
+  margin-top: 5rem;
   justify-self: center;
-}
-
-@media screen and (min-width: 801px) {
-  form .btn {
-    margin-top: 5rem;
-  }
 }

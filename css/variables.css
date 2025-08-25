@@ -1,3 +1,4 @@
+/* Variables */
 :root {
   --color-primary: rgb(255, 214, 241);
   --color-primary-50: rgba(255, 214, 241, 0.5);
@@ -6,9 +7,12 @@
   --color-dark-15: rgba(38, 41, 47, 0.15);
   --color-dark-25: rgba(38, 41, 47, 0.25);
   --color-dark-50: rgba(38, 41, 47, 0.5);
+  --color-dark-75: rgba(38, 41, 47, 0.75);
   --color-white: rgb(251, 251, 247);
   --color-pure-white: rgb(255, 255, 255);
   --color-error: rgb(240, 68, 56);
   --color-warning: rgb(247, 144, 9);
   --border: 1px solid var(--color-dark-15);
+  --border-hover: 1px solid var(--color-dark-25);
+  --outline-focus: 2px solid var(--color-dark-15);
 }

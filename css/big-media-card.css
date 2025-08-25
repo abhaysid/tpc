@@ -1,3 +1,5 @@
+/* Big Media Card */
+
 .big-media-card {
   background-color: var(--color-pure-white);
   border: var(--border);
@@ -10,6 +12,7 @@
   margin-bottom: 3rem;
   border-bottom: var(--border);
 }
+
 .big-media-card__header__heading {
   margin-bottom: 1rem;
 }
@@ -18,19 +21,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 5rem;
-  row-gap: 3rem;
+  gap: 3rem 5rem;
 }
 
 .big-media-card__body__image img {
   border-radius: 3rem;
 }
 
-.big-media-card__body__content {
-}
-
 .big-media-card__body.float-img-right .big-media-card__body__image {
   order: 2;
+}
+
+.big-media-card__body__content {
 }
 
 @media screen and (max-width: 900px) {
@@ -40,5 +42,9 @@
 
   .big-media-card__body__image img {
     max-width: 40rem;
+  }
+
+  .big-media-card__body.float-img-right .big-media-card__body__image {
+    order: 0;
   }
 }
