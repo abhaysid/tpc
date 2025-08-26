@@ -7,7 +7,6 @@
   flex-wrap: wrap;
   min-height: 7.4rem;
   background-color: var(--color-white);
-  margin-top: 30px;
   border-radius: 3.8rem;
   border: var(--border);
 }

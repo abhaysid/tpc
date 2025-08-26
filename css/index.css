@@ -26,3 +26,7 @@
 @import "plain-badge.css";
 @import "info-graph-grid.css";
 @import "form-landing-page.css";
+
+/* Sections */
+
+@import "Section-Hero.css";

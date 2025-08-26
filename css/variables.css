@@ -15,4 +15,7 @@
   --border: 1px solid var(--color-dark-15);
   --border-hover: 1px solid var(--color-dark-25);
   --outline-focus: 2px solid var(--color-dark-15);
+  --hero-border: 10px solid var(--color-pure-white);
+  --hero-border-small: 5px solid var(--color-pure-white);
+  --hero-box-shadow: 0px 0px 20px 2.5px var(--color-dark-25);
 }
