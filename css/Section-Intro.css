@@ -1,7 +1,6 @@
 /* Section Intro */
 
 .intro {
-  padding: 12rem 0 6rem 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5rem;
@@ -65,9 +64,5 @@
 
   .intro__content__grid > :nth-child(3) {
     order: 1;
-  }
-
-  .intro {
-    padding: 5rem 0 2.5rem 0;
   }
 }

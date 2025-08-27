@@ -21,10 +21,6 @@
   text-align: center; /* to get all the div with texts to center */
 }
 
-.hero .plain-badge {
-  margin-top: 8rem;
-}
-
 .hero__heading {
   margin-top: 3rem;
 }
@@ -84,12 +80,18 @@
 
 @media screen and (max-width: 900px) {
   .bg-primary {
-    padding-bottom: 3rem;
     box-shadow: none;
   }
 
-  .hero .plain-badge {
-    margin-top: 5rem;
+  /* note: by default <section> has margin of 12 rem to 5 rem responsively */
+  /* with addition to margin this padding is specially only for this div  */
+  section.hero {
+    padding-bottom: 5rem;
+  }
+
+  .hero .btn-group {
+    display: block;
+    margin: 3rem auto;
   }
 
   .hero__images {
@@ -124,16 +126,10 @@
   .hero__image__right {
     width: 100%;
   }
-
-  .hero .btn-group {
-    display: block;
-    margin: 3rem auto;
-  }
 }
 
 @media screen and (max-width: 425px) {
   .hero .plain-badge {
-    margin-top: 3rem;
     font-size: 1.2rem;
   }
 
