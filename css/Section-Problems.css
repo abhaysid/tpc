@@ -1,0 +1,30 @@
+/* Section Problem */
+
+.problems h2 {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.problems .big-media-card {
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 900px) {
+  .problems h2 {
+    margin-bottom: 4rem;
+  }
+
+  .problems .big-media-card {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .problems h2 {
+    margin-bottom: 3rem;
+  }
+
+  .problems .big-media-card {
+    margin-bottom: 1rem;
+  }
+}
