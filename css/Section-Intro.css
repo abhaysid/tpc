@@ -1,0 +1,73 @@
+/* Section Intro */
+
+.intro {
+  padding: 12rem 0 6rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+}
+
+.intro__content {
+}
+
+/* Intro Content: h2 + div.intro__content__grid + p + div.btn-group */
+
+.intro__content > * {
+  margin-bottom: 5rem;
+}
+
+.intro__content__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+/* .container--intro__images used here to keep it centered inside .intro grid */
+
+.container--intro__images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro__images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.intro__images__img {
+  line-height: 0;
+  margin: 1rem;
+  background-color: var(--color-dark-15);
+  padding: 0.5rem;
+  border-radius: 2rem;
+}
+
+.intro__images__img img {
+  border-radius: 1.5rem;
+}
+
+.intro__images__img:nth-of-type(1) {
+  grid-column: 1/-1;
+}
+
+@media screen and (max-width: 1250px) {
+  .intro {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .intro__content__grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .intro__content__grid > :nth-child(3) {
+    order: 1;
+  }
+
+  .intro {
+    padding: 5rem 0 2.5rem 0;
+  }
+}
