@@ -2,20 +2,11 @@
 
 .intro {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 60% 1fr;
   gap: 5rem;
 }
 
-.intro__content {
-}
-
-/* Intro Content: h2 + div.intro__content__grid + p + div.btn-group */
-
-.intro__content > * {
-  margin-bottom: 5rem;
-}
-
-.intro__content__grid {
+.intro__content__media-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
@@ -53,16 +44,21 @@
 @media screen and (max-width: 1250px) {
   .intro {
     display: block;
+    text-align: center;
+  }
+
+  .btn-group {
+    justify-content: center;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .intro__content__grid {
+  .intro__content__media-cards {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
 
-  .intro__content__grid > :nth-child(3) {
+  .intro__content__media-cards > :nth-child(3) {
     order: 1;
   }
 }

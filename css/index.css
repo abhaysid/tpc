@@ -29,6 +29,8 @@
 
 /* Sections */
 
+@import "Sections.css";
 @import "Section-Hero.css";
 @import "Section-Intro.css";
 @import "Section-Problems.css";
+@import "Section-Solutions.css";

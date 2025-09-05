@@ -17,31 +17,6 @@
   box-shadow: var(--hero-box-shadow);
 }
 
-.hero {
-  text-align: center; /* to get all the div with texts to center */
-}
-
-.hero__heading {
-  margin-top: 3rem;
-}
-
-.hero__message {
-  margin-top: 3rem;
-}
-
-.hero__cta {
-  margin-top: 3rem;
-}
-
-.hero .btn-group {
-  display: block;
-  margin: 5rem auto;
-}
-
-.hero .btn {
-  margin: 0.5rem;
-}
-
 .hero__images {
   display: inline-flex;
   width: 90vw;
@@ -87,11 +62,6 @@
   /* with addition to margin this padding is specially only for this div  */
   section.hero {
     padding-bottom: 5rem;
-  }
-
-  .hero .btn-group {
-    display: block;
-    margin: 3rem auto;
   }
 
   .hero__images {

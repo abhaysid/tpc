@@ -1,0 +1,96 @@
+/* ALL SECTION LAYOUT MARGIN & ALIGNMENT */
+
+section,
+section.wrapper {
+  margin-top: 12rem;
+  margin-bottom: 12rem;
+}
+
+#hero {
+  text-align: center;
+}
+
+#hero .hero__heading,
+#hero .hero__message,
+#hero .hero__cta {
+  margin-top: 3rem;
+}
+
+#hero .btn-group {
+  margin: 5rem 0;
+}
+
+#intro .intro__content > * {
+  margin-bottom: 3rem;
+}
+
+#problems h2,
+#solution-cta h2,
+#solution-customer-retention h2 {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+#solution-cta .cta-media-card,
+#problems .big-media-card {
+  margin-bottom: 3rem;
+}
+
+#solution-customer-retention .info-graph-grid {
+  margin-bottom: 5rem;
+}
+
+#hero .btn-group,
+#solution-customer-retention .btn-group {
+  justify-content: center;
+}
+
+@media screen and (max-width: 900px) {
+  section,
+  section.wrapper {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+  }
+
+  #problems h2,
+  #solution-cta h2,
+  #solution-customer-retention h2 {
+    margin-bottom: 4rem;
+  }
+
+  #solution-cta .cta-media-card,
+  #problems .big-media-card {
+    margin-bottom: 2rem;
+  }
+
+  #solution-customer-retention .info-graph-grid {
+    margin-bottom: 4rem;
+  }
+
+  #hero .btn-group {
+    margin: 3rem 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  section,
+  section.wrapper {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  #problems h2,
+  #solution-cta h2,
+  #solution-customer-retention h2 {
+    margin-bottom: 3rem;
+  }
+
+  #solution-cta .cta-media-card,
+  #problems .big-media-card {
+    margin-bottom: 1rem;
+  }
+
+  #solution-customer-retention .info-graph-grid {
+    margin-bottom: 3rem;
+  }
+}
