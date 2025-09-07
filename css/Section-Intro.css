@@ -44,11 +44,6 @@
 @media screen and (max-width: 1250px) {
   .intro {
     display: block;
-    text-align: center;
-  }
-
-  .btn-group {
-    justify-content: center;
   }
 }
 

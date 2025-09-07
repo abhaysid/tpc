@@ -1,48 +1,11 @@
 /* ALL SECTION LAYOUT MARGIN & ALIGNMENT */
 
+/* ------------------------- SECTIONS ------------------------- */
+
 section,
 section.wrapper {
   margin-top: 12rem;
   margin-bottom: 12rem;
-}
-
-#hero {
-  text-align: center;
-}
-
-#hero .hero__heading,
-#hero .hero__message,
-#hero .hero__cta {
-  margin-top: 3rem;
-}
-
-#hero .btn-group {
-  margin: 5rem 0;
-}
-
-#intro .intro__content > * {
-  margin-bottom: 3rem;
-}
-
-#problems h2,
-#solution-cta h2,
-#solution-customer-retention h2 {
-  text-align: center;
-  margin-bottom: 5rem;
-}
-
-#solution-cta .cta-media-card,
-#problems .big-media-card {
-  margin-bottom: 3rem;
-}
-
-#solution-customer-retention .info-graph-grid {
-  margin-bottom: 5rem;
-}
-
-#hero .btn-group,
-#solution-customer-retention .btn-group {
-  justify-content: center;
 }
 
 @media screen and (max-width: 900px) {
@@ -50,25 +13,6 @@ section.wrapper {
   section.wrapper {
     margin-top: 8rem;
     margin-bottom: 8rem;
-  }
-
-  #problems h2,
-  #solution-cta h2,
-  #solution-customer-retention h2 {
-    margin-bottom: 4rem;
-  }
-
-  #solution-cta .cta-media-card,
-  #problems .big-media-card {
-    margin-bottom: 2rem;
-  }
-
-  #solution-customer-retention .info-graph-grid {
-    margin-bottom: 4rem;
-  }
-
-  #hero .btn-group {
-    margin: 3rem 0;
   }
 }
 
@@ -78,19 +22,245 @@ section.wrapper {
     margin-top: 5rem;
     margin-bottom: 5rem;
   }
+}
 
+/* only for hero on screen sizes less then 900px wide */
+
+@media screen and (max-width: 900px) {
+  section.hero {
+    padding-bottom: 5rem;
+  }
+}
+
+/* ------------------------- TEXT & BUTTONS ALIGNMENT CONTROL ------------------------- */
+
+/* ----- Headings ----- */
+#hero h1,
+#problems h2,
+#solution-cta h2,
+#solution-customer-retention h2 {
+  text-align: center;
+}
+
+@media screen and (max-width: 1250px) {
+  #intro h2 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #steps h2,
+  #solution-clients-achievement h2 {
+    text-align: center;
+  }
+}
+
+/* ----- Texts ----- */
+
+#hero,
+#hero .hero__message,
+#hero .hero__cta {
+  text-align: center;
+}
+
+@media screen and (max-width: 1250px) {
+  #intro .intro__content__cta {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #steps .steps__description {
+    text-align: center;
+  }
+}
+
+/* ----- Buttons ----- */
+
+#hero .btn-group,
+#solution-customer-retention .btn-group {
+  justify-content: center;
+}
+
+@media screen and (max-width: 1250px) {
+  #intro .btn-group {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #solution-clients-achievement .btn-group,
+  #steps .btn-group {
+    justify-content: center;
+  }
+}
+
+/* ------------------------- SECTION HEADING MARGIN CONTROL------------------------- */
+
+/* ----- Headings that are aligned left ----- */
+
+#intro h2,
+#solution-clients-achievement h2,
+#steps h2 {
+  margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 900px) {
+  #intro h2,
+  #solution-clients-achievement h2,
+  #steps h2 {
+    margin-bottom: 4rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #intro h2,
+  #solution-clients-achievement h2,
+  #steps h2 {
+    margin-bottom: 3rem;
+  }
+}
+
+/* ----- Headings that are aligned center ----- */
+
+#problems h2,
+#solution-cta h2,
+#solution-customer-retention h2 {
+  margin-bottom: 12rem;
+}
+
+@media screen and (max-width: 900px) {
   #problems h2,
   #solution-cta h2,
   #solution-customer-retention h2 {
-    margin-bottom: 3rem;
+    margin-bottom: 8rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #problems h2,
+  #solution-cta h2,
+  #solution-customer-retention h2 {
+    margin-bottom: 5rem;
+  }
+}
+
+/* ------------------------- SECTION CONTENT MARGIN CONTROL ------------------------- */
+
+/* ----- CONTENT CATEGORY: bottom margin 3rem on all view width's ------ */
+
+#hero .plain-badge,
+#hero .hero__heading,
+#hero .hero__message,
+#hero .hero__cta {
+  margin-bottom: 3rem;
+}
+
+#intro .intro__content__media-cards,
+#intro .intro__content__cta,
+#intro .btn-group {
+  margin-bottom: 3rem;
+}
+
+#solution-clients-achievement .achievements__header,
+#solution-clients-achievement .achievements__description,
+#solution-clients-achievement .btn-group {
+  margin-bottom: 3rem;
+}
+
+#steps .steps__description {
+  margin-bottom: 3rem;
+}
+
+/* ------ CONTENT CATEGORY: bottom margin 3rem to 2rem to 1rem ------ */
+
+#problems .big-media-card {
+  margin-bottom: 3rem;
+}
+
+#solution-cta .cta-media-card {
+  margin-bottom: 3rem;
+}
+
+#steps .step-card {
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 900px) {
+  #problems .big-media-card {
+    margin-bottom: 2rem;
   }
 
-  #solution-cta .cta-media-card,
+  #solution-cta .cta-media-card {
+    margin-bottom: 2rem;
+  }
+
+  #steps .step-card {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
   #problems .big-media-card {
     margin-bottom: 1rem;
   }
 
+  #solution-cta .cta-media-card {
+    margin-bottom: 1rem;
+  }
+
+  #steps .step-card {
+    margin-bottom: 1rem;
+  }
+}
+
+/* ------ CONTENT CATEGORY: bottom margin 5rem to 4rem to 3rem ------ */
+
+#solution-customer-retention .info-graph-grid {
+  margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 900px) {
   #solution-customer-retention .info-graph-grid {
+    margin-bottom: 4rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #solution-customer-retention .info-graph-grid {
+    margin-bottom: 3rem;
+  }
+}
+
+/* ------ CONTENT CATEGORY: bottom & top margin 5rem on all view width ------ */
+
+#steps .btn-group {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+/* to be read along with above style
+bottom margin is added to keep the cads aligned with buttons */
+#steps .steps__body {
+  margin-bottom: 2rem;
+}
+
+/* ------ CONTENT CATEGORY: bottom & top margin 5rem to 4rem to 3rem ------ */
+
+#hero .btn-group {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 900px) {
+  #hero .btn-group {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #hero .btn-group {
+    margin-top: 3rem;
     margin-bottom: 3rem;
   }
 }

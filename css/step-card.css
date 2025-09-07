@@ -1,6 +1,7 @@
 /* Step Card */
 
 .step-card {
+  background-color: var(--color-pure-white);
   border: 1px solid var(--color-dark-15);
   padding: 3rem;
   border-radius: 2rem;

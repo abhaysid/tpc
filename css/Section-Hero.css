@@ -58,12 +58,6 @@
     box-shadow: none;
   }
 
-  /* note: by default <section> has margin of 12 rem to 5 rem responsively */
-  /* with addition to margin this padding is specially only for this div  */
-  section.hero {
-    padding-bottom: 5rem;
-  }
-
   .hero__images {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
