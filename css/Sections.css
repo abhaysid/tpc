@@ -38,7 +38,9 @@ section.wrapper {
 #hero h1,
 #problems h2,
 #solution-cta h2,
-#solution-customer-retention h2 {
+#solution-customer-retention h2,
+#pricing h2,
+#testimonial h2 {
   text-align: center;
 }
 
@@ -63,6 +65,12 @@ section.wrapper {
   text-align: center;
 }
 
+#pricing .heading__description,
+#pricing .pricing__description,
+#pricing .pricing__cta {
+  text-align: center;
+}
+
 @media screen and (max-width: 1250px) {
   #intro .intro__content__cta {
     text-align: center;
@@ -78,7 +86,8 @@ section.wrapper {
 /* ----- Buttons ----- */
 
 #hero .btn-group,
-#solution-customer-retention .btn-group {
+#solution-customer-retention .btn-group,
+#pricing .btn-group {
   justify-content: center;
 }
 
@@ -125,14 +134,16 @@ section.wrapper {
 
 #problems h2,
 #solution-cta h2,
-#solution-customer-retention h2 {
+#solution-customer-retention h2,
+#testimonial h2 {
   margin-bottom: 12rem;
 }
 
 @media screen and (max-width: 900px) {
   #problems h2,
   #solution-cta h2,
-  #solution-customer-retention h2 {
+  #solution-customer-retention h2,
+  #testimonial h2 {
     margin-bottom: 8rem;
   }
 }
@@ -140,14 +151,53 @@ section.wrapper {
 @media screen and (max-width: 650px) {
   #problems h2,
   #solution-cta h2,
-  #solution-customer-retention h2 {
+  #solution-customer-retention h2,
+  #testimonial h2 {
     margin-bottom: 5rem;
+  }
+}
+
+/* ----- Headings with description below ----- */
+
+#pricing h2 {
+  margin-bottom: 4rem;
+}
+
+#pricing .heading__description {
+  margin-bottom: 8rem;
+}
+
+@media screen and (max-width: 900px) {
+  #pricing h2 {
+    margin-bottom: 3rem;
+  }
+
+  #pricing .heading__description {
+    margin-bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #pricing h2 {
+    margin-bottom: 2rem;
+  }
+
+  #pricing .heading__description {
+    margin-bottom: 3rem;
   }
 }
 
 /* ------------------------- SECTION CONTENT MARGIN CONTROL ------------------------- */
 
+/* ------ CONTENT CATEGORY: bottom margin 2rem on all view width's ------ */
+/* ------------------------ [2rem ALL WIDTH] ------------------------ */
+
+#pricing .pricing__description {
+  margin-bottom: 2rem;
+}
+
 /* ----- CONTENT CATEGORY: bottom margin 3rem on all view width's ------ */
+/* ------------------------ [3rem ALL WIDTH] ------------------------ */
 
 #hero .plain-badge,
 #hero .hero__heading,
@@ -172,7 +222,27 @@ section.wrapper {
   margin-bottom: 3rem;
 }
 
+/* ------ CONTENT CATEGORY: bottom & top margin 5rem on all view width ------ */
+/* ------------------------ [5 + 5 rem ALL WIDTH] ------------------------ */
+
+#steps .btn-group {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+#steps .steps__body {
+  margin-bottom: 2rem;
+  /* to be read along with above style
+  bottom margin is added to keep the cads aligned with buttons */
+}
+
+#pricing .btn-group {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
 /* ------ CONTENT CATEGORY: bottom margin 3rem to 2rem to 1rem ------ */
+/* ------------------------ [3 - 2 - 1] ------------------------ */
 
 #problems .big-media-card {
   margin-bottom: 3rem;
@@ -186,6 +256,10 @@ section.wrapper {
   margin-bottom: 3rem;
 }
 
+#pricing .table {
+  margin-bottom: 3rem;
+}
+
 @media screen and (max-width: 900px) {
   #problems .big-media-card {
     margin-bottom: 2rem;
@@ -196,6 +270,10 @@ section.wrapper {
   }
 
   #steps .step-card {
+    margin-bottom: 2rem;
+  }
+
+  #pricing .table {
     margin-bottom: 2rem;
   }
 }
@@ -212,9 +290,14 @@ section.wrapper {
   #steps .step-card {
     margin-bottom: 1rem;
   }
+
+  #pricing .table {
+    margin-bottom: 1rem;
+  }
 }
 
 /* ------ CONTENT CATEGORY: bottom margin 5rem to 4rem to 3rem ------ */
+/* ------------------------ [5 - 4 - 3] ------------------------ */
 
 #solution-customer-retention .info-graph-grid {
   margin-bottom: 5rem;
@@ -232,21 +315,15 @@ section.wrapper {
   }
 }
 
-/* ------ CONTENT CATEGORY: bottom & top margin 5rem on all view width ------ */
+/* ------ CONTENT CATEGORY: bottom & top margin 5rem to 4rem to 3rem ------ */
+/* ------------------------ [(5 + 5) - (4 + 4) - (3 + 3)] ------------------------ */
 
-#steps .btn-group {
+#hero .btn-group {
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
-/* to be read along with above style
-bottom margin is added to keep the cads aligned with buttons */
-#steps .steps__body {
-  margin-bottom: 2rem;
-}
 
-/* ------ CONTENT CATEGORY: bottom & top margin 5rem to 4rem to 3rem ------ */
-
-#hero .btn-group {
+#pricing .btn-group {
   margin-top: 5rem;
   margin-bottom: 5rem;
 }

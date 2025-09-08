@@ -47,7 +47,6 @@
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
-  align-content: stretch;
   container-type: inline-size;
   container-name: btn-group;
 }
@@ -55,6 +54,11 @@
 @container btn-group (max-width: 45.8rem) {
   /* width = (22.4rem of button 1) + (1rem of flex-gap) + (22.4rem button) = 45.8rem
   Checks the container width to fit 2 buttons in a row */
+  .btn-group a {
+    flex-grow: 1;
+    display: flex;
+  }
+
   .btn-group .btn {
     flex-grow: 1;
   }

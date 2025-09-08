@@ -2,6 +2,17 @@
 /* Additional styling to glide.care.css */
 /* glide.core.css to be pre-read before this*/
 
+.glide__slide {
+  height: auto;
+}
+
+.glide__slide .testimonial-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .glide__arrow {
   height: 5rem;
   width: 5rem;

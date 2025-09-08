@@ -14,14 +14,14 @@
 .table__row {
   background-color: var(--color-pure-white);
   border-radius: 2rem;
-  padding: 2rem 2rem 0;
+  padding: 2rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin-top: 1rem;
 }
 
 .table__cell {
-  margin-bottom: 2rem;
+  margin: 0 1rem;
 }
 
 .cell__label {
@@ -36,5 +36,9 @@
 @media screen and (max-width: 900px) {
   .table__row {
     grid-template-columns: 1fr;
+  }
+
+  .table__cell {
+    margin: 1rem;
   }
 }
