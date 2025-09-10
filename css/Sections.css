@@ -40,7 +40,8 @@ section.wrapper {
 #solution-cta h2,
 #solution-customer-retention h2,
 #pricing h2,
-#testimonial h2 {
+#testimonial h2,
+#faq h2 {
   text-align: center;
 }
 
@@ -71,6 +72,10 @@ section.wrapper {
   text-align: center;
 }
 
+#faq .faq__cta {
+  text-align: center;
+}
+
 @media screen and (max-width: 1250px) {
   #intro .intro__content__cta {
     text-align: center;
@@ -87,7 +92,8 @@ section.wrapper {
 
 #hero .btn-group,
 #solution-customer-retention .btn-group,
-#pricing .btn-group {
+#pricing .btn-group,
+#faq .btn-group {
   justify-content: center;
 }
 
@@ -135,7 +141,8 @@ section.wrapper {
 #problems h2,
 #solution-cta h2,
 #solution-customer-retention h2,
-#testimonial h2 {
+#testimonial h2,
+#faq h2 {
   margin-bottom: 12rem;
 }
 
@@ -143,7 +150,8 @@ section.wrapper {
   #problems h2,
   #solution-cta h2,
   #solution-customer-retention h2,
-  #testimonial h2 {
+  #testimonial h2,
+  #faq h2 {
     margin-bottom: 8rem;
   }
 }
@@ -152,7 +160,8 @@ section.wrapper {
   #problems h2,
   #solution-cta h2,
   #solution-customer-retention h2,
-  #testimonial h2 {
+  #testimonial h2,
+  #faq h2 {
     margin-bottom: 5rem;
   }
 }
@@ -303,14 +312,29 @@ section.wrapper {
   margin-bottom: 5rem;
 }
 
+#faq .faq-block,
+#faq .faq__cta {
+  margin-bottom: 5rem;
+}
+
 @media screen and (max-width: 900px) {
   #solution-customer-retention .info-graph-grid {
+    margin-bottom: 4rem;
+  }
+
+  #faq .faq-block,
+  #faq .faq__cta {
     margin-bottom: 4rem;
   }
 }
 
 @media screen and (max-width: 650px) {
   #solution-customer-retention .info-graph-grid {
+    margin-bottom: 3rem;
+  }
+
+  #faq .faq-block,
+  #faq .faq__cta {
     margin-bottom: 3rem;
   }
 }
@@ -333,10 +357,20 @@ section.wrapper {
     margin-top: 4rem;
     margin-bottom: 4rem;
   }
+
+  #pricing .btn-group {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
 }
 
 @media screen and (max-width: 650px) {
   #hero .btn-group {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  #pricing .btn-group {
     margin-top: 3rem;
     margin-bottom: 3rem;
   }

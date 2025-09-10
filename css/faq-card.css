@@ -3,6 +3,7 @@
 .faq-card {
   border: var(--border);
   border-radius: 3rem;
+  background-color: var(--color-pure-white);
   padding: 3rem;
   margin: 1rem;
 }
