@@ -35,6 +35,7 @@ section.wrapper {
 /* ------------------------- TEXT & BUTTONS ALIGNMENT CONTROL ------------------------- */
 
 /* ----- Headings ----- */
+
 #hero h1,
 #problems h2,
 #solution-cta h2,
@@ -63,16 +64,10 @@ section.wrapper {
 
 #hero,
 #hero .hero__message,
-#hero .hero__cta {
-  text-align: center;
-}
-
+#hero .hero__cta,
 #pricing .heading__description,
 #pricing .pricing__description,
-#pricing .pricing__cta {
-  text-align: center;
-}
-
+#pricing .pricing__cta,
 #faq .faq__cta {
   text-align: center;
 }
@@ -114,6 +109,7 @@ section.wrapper {
 /* ------------------------- SECTION HEADING MARGIN CONTROL------------------------- */
 
 /* -----  Header that are centered ----- */
+
 #hero-bg header {
   margin-top: 5rem;
 }
@@ -130,7 +126,7 @@ section.wrapper {
   }
 }
 
-/* ----- Headings that are aligned left or short content below ----- */
+/* ----- Headings that are aligned left or Headings with short content ----- */
 
 #intro h2,
 #solution-clients-achievement h2,
@@ -219,43 +215,83 @@ section.wrapper {
 
 /* ------------------------- SECTION CONTENT MARGIN CONTROL ------------------------- */
 
-/* ------ CONTENT CATEGORY: bottom margin 2rem on all view width's ------ */
-/* ------------------------ [2rem ALL WIDTH] ------------------------ */
+/* ------ [2rem ALL WIDTH] - CONTENT CATEGORY: bottom margin 2rem on all view width's ------ */
 
 #pricing .pricing__description {
   margin-bottom: 2rem;
 }
 
-/* ----- CONTENT CATEGORY: bottom margin 3rem on all view width's ------ */
-/* ------------------------ [3rem ALL WIDTH] ------------------------ */
+/* ----- [3rem ALL WIDTH] - CONTENT CATEGORY: bottom margin 3rem on all view width's ------ */
 
 #hero .plain-badge,
 #hero .hero__heading,
 #hero .hero__message,
-#hero .hero__cta {
-  margin-bottom: 3rem;
-}
-
+#hero .hero__cta,
 #intro .intro__content__media-cards,
 #intro .intro__content__cta,
-#intro .btn-group {
-  margin-bottom: 3rem;
-}
-
+#intro .btn-group,
 #solution-clients-achievement .achievements__header,
 #solution-clients-achievement .achievements__description,
-#solution-clients-achievement .btn-group {
-  margin-bottom: 3rem;
-}
-
+#solution-clients-achievement .btn-group,
 #steps .steps__description {
   margin-bottom: 3rem;
 }
 
-/* ------ CONTENT CATEGORY: bottom & top margin 5rem on all view width ------ */
-/* ------------------------ [5 + 5 rem ALL WIDTH] ------------------------ */
+/* ------ [3 - 2 - 1] - CONTENT CATEGORY: bottom margin 3rem to 2rem to 1rem ------ */
 
-#steps .btn-group {
+#problems .big-media-card,
+#solution-cta .cta-media-card,
+#steps .step-card,
+#pricing .table {
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 900px) {
+  #problems .big-media-card,
+  #solution-cta .cta-media-card,
+  #steps .step-card,
+  #pricing .table {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #problems .big-media-card,
+  #solution-cta .cta-media-card,
+  #steps .step-card,
+  #pricing .table {
+    margin-bottom: 1rem;
+  }
+}
+
+/* ------ [5 - 4 - 3] - CONTENT CATEGORY: bottom margin 5rem to 4rem to 3rem ------ */
+
+#solution-customer-retention .info-graph-grid,
+#faq .faq-block,
+#faq .faq__cta {
+  margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 900px) {
+  #solution-customer-retention .info-graph-grid,
+  #faq .faq-block,
+  #faq .faq__cta {
+    margin-bottom: 4rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #solution-customer-retention .info-graph-grid,
+  #faq .faq-block,
+  #faq .faq__cta {
+    margin-bottom: 3rem;
+  }
+}
+
+/* ------ [5+5 rem ALL WIDTH] - CONTENT CATEGORY: bottom & top margin 5rem on all view width ------ */
+
+#steps .btn-group,
+#pricing .btn-group {
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
@@ -266,119 +302,16 @@ section.wrapper {
   bottom margin is added to keep the cads aligned with buttons */
 }
 
-#pricing .btn-group {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
+/* ------ [(5+5) - (4+4) - (3+3)] - CONTENT CATEGORY: bottom & top margin 5rem to 4rem to 3rem ------ */
 
-/* ------ CONTENT CATEGORY: bottom margin 3rem to 2rem to 1rem ------ */
-/* ------------------------ [3 - 2 - 1] ------------------------ */
-
-#problems .big-media-card {
-  margin-bottom: 3rem;
-}
-
-#solution-cta .cta-media-card {
-  margin-bottom: 3rem;
-}
-
-#steps .step-card {
-  margin-bottom: 3rem;
-}
-
-#pricing .table {
-  margin-bottom: 3rem;
-}
-
-@media screen and (max-width: 900px) {
-  #problems .big-media-card {
-    margin-bottom: 2rem;
-  }
-
-  #solution-cta .cta-media-card {
-    margin-bottom: 2rem;
-  }
-
-  #steps .step-card {
-    margin-bottom: 2rem;
-  }
-
-  #pricing .table {
-    margin-bottom: 2rem;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  #problems .big-media-card {
-    margin-bottom: 1rem;
-  }
-
-  #solution-cta .cta-media-card {
-    margin-bottom: 1rem;
-  }
-
-  #steps .step-card {
-    margin-bottom: 1rem;
-  }
-
-  #pricing .table {
-    margin-bottom: 1rem;
-  }
-}
-
-/* ------ CONTENT CATEGORY: bottom margin 5rem to 4rem to 3rem ------ */
-/* ------------------------ [5 - 4 - 3] ------------------------ */
-
-#solution-customer-retention .info-graph-grid {
-  margin-bottom: 5rem;
-}
-
-#faq .faq-block,
-#faq .faq__cta {
-  margin-bottom: 5rem;
-}
-
-@media screen and (max-width: 900px) {
-  #solution-customer-retention .info-graph-grid {
-    margin-bottom: 4rem;
-  }
-
-  #faq .faq-block,
-  #faq .faq__cta {
-    margin-bottom: 4rem;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  #solution-customer-retention .info-graph-grid {
-    margin-bottom: 3rem;
-  }
-
-  #faq .faq-block,
-  #faq .faq__cta {
-    margin-bottom: 3rem;
-  }
-}
-
-/* ------ CONTENT CATEGORY: bottom & top margin 5rem to 4rem to 3rem ------ */
-/* ------------------------ [(5 + 5) - (4 + 4) - (3 + 3)] ------------------------ */
-
-#hero .btn-group {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
-
+#hero .btn-group,
 #pricing .btn-group {
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
 
 @media screen and (max-width: 900px) {
-  #hero .btn-group {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-  }
-
+  #hero .btn-group,
   #pricing .btn-group {
     margin-top: 4rem;
     margin-bottom: 4rem;
@@ -386,11 +319,7 @@ section.wrapper {
 }
 
 @media screen and (max-width: 650px) {
-  #hero .btn-group {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-  }
-
+  #hero .btn-group,
   #pricing .btn-group {
     margin-top: 3rem;
     margin-bottom: 3rem;

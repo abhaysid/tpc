@@ -2,6 +2,7 @@
 /* .bg-primary covers entire wrapper header nav and section.hero */
 
 .bg-primary {
+  --off-set: 10px;
   background-color: var(--color-primary-50);
   background-image: radial-gradient(
       circle,
@@ -11,8 +12,9 @@
     linear-gradient(var(--color-primary) 1.5px, transparent 0px),
     linear-gradient(90deg, var(--color-primary) 1.5px, transparent 0px);
   background-size: 80px 55px;
-  background-position: 40.75px 28.25px, 0 0, 0 0;
-  box-shadow: var(--hero-box-shadow);
+  background-position: calc(40.75px + var(--off-set))
+      calc(28.25px + var(--off-set)),
+    var(--off-set) var(--off-set), var(--off-set) var(--off-set);
   border: 0.01px solid transparent; /* transparent border to apply margin to section */
 }
 

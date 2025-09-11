@@ -2,6 +2,7 @@
 
 .hero-bg {
   border-bottom: 0;
+  box-shadow: var(--hero-box-shadow);
 }
 
 .hero__images {
@@ -41,7 +42,7 @@
 }
 
 @media screen and (max-width: 900px) {
-  .bg-primary {
+  .hero-bg {
     box-shadow: none;
   }
 
