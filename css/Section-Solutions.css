@@ -1,10 +1,5 @@
 /* Section Solutions Client's Achievement */
 
-.bg-pure-white {
-  background-color: var(--color-pure-white);
-  border: 0.01px solid transparent; /* transparent border to apply margin to section */
-}
-
 .achievements__header {
   display: grid;
   grid-template-columns: 1fr 1fr;

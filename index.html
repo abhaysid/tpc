@@ -8,35 +8,30 @@
   </head>
   <body>
     <!-- SECTION: HERO & NAV -->
-    <div class="bg-primary" role="presentation">
-      <header>
-        <div class="wrapper">
-          <nav class="nav collapsible">
-            <div class="nav__logo">
-              <img
-                src="./assets/images/logo.svg"
-                alt="The Postal Company Logo"
-              />
-            </div>
-            <button class="nav__toggler">
-              <svg class="nav__icon">
-                <use href="./assets/icons/sprite.svg#menu"></use>
-              </svg>
-            </button>
-            <div class="nav__menu collapsible__content">
-              <ul class="nav__list">
-                <li class="nav__list__item nav__active"><a href="">Home</a></li>
-                <li class="nav__list__item"><a href="">Solutions</a></li>
-                <li class="nav__list__item"><a href="">Pricing</a></li>
-                <li class="nav__list__item">
-                  <a href="">
-                    <button class="nav__button">Get Started</button>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
+    <div id="hero-bg" class="bg-primary hero-bg" role="presentation">
+      <header class="wrapper">
+        <nav class="nav collapsible">
+          <div class="nav__logo">
+            <img src="./assets/images/logo.svg" alt="The Postal Company Logo" />
+          </div>
+          <button class="nav__toggler">
+            <svg class="nav__icon">
+              <use href="./assets/icons/sprite.svg#menu"></use>
+            </svg>
+          </button>
+          <div class="nav__menu collapsible__content">
+            <ul class="nav__list">
+              <li class="nav__list__item nav__active"><a href="">Home</a></li>
+              <li class="nav__list__item"><a href="">Solutions</a></li>
+              <li class="nav__list__item"><a href="">Pricing</a></li>
+              <li class="nav__list__item">
+                <a href="">
+                  <button class="nav__button">Get Started</button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
         <!-- END: .nav - wrapper -->
       </header>
       <section id="hero" class="hero">
@@ -1590,6 +1585,67 @@
     <!-- END-SECTION: FAQs -->
     <!-- * ----- * ----- * ----- * ----- * ----- * ----- * ----- * ----- * ----- * ----- * ----- * ----- * -->
     <!-- SECTION: Call Back -->
+    <div class="bg-primary" role="presentation">
+      <section id="call-back" class="wrapper">
+        <h2 class="cap">Request Call Back</h2>
+        <!-- Landing Page Form -->
+        <form class="form-landing-page" action="" method="">
+          <label>
+            Name*
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter Your Name"
+              required
+              minlength="3"
+            />
+          </label>
+          <label>
+            <!-- "+91 " automatically inserted by javascript refer index.js -->
+            Phone*
+            <input
+              type="tel"
+              pattern="[0-9+ ]+"
+              id="tel"
+              name="phone"
+              placeholder="Enter Your Phone Number"
+              required
+              minlength="14"
+              maxlength="14"
+            />
+          </label>
+          <label>
+            Subject
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Enter Subject"
+              maxlength="100"
+            />
+          </label>
+          <label>
+            Message
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Message..."
+              rows="3"
+              maxlength="350"
+            ></textarea>
+          </label>
+          <button type="submit" class="btn">
+            Send Message
+            <span class="icon-container round small primary">
+              <svg class="icon">
+                <use href="./assets/icons/sprite.svg#long-arrow-right"></use>
+              </svg>
+            </span>
+          </button>
+        </form>
+      </section>
+    </div>
     <script src="./js/glide.min.js"></script>
     <script src="./js/index.js"></script>
     <script>

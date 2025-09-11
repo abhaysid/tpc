@@ -1,0 +1,22 @@
+/* .bg-primary adds background color and grids with dot */
+/* .bg-primary covers entire wrapper header nav and section.hero */
+
+.bg-primary {
+  background-color: var(--color-primary-50);
+  background-image: radial-gradient(
+      circle,
+      var(--color-primary) 3px,
+      transparent 0px
+    ),
+    linear-gradient(var(--color-primary) 1.5px, transparent 0px),
+    linear-gradient(90deg, var(--color-primary) 1.5px, transparent 0px);
+  background-size: 80px 55px;
+  background-position: 40.75px 28.25px, 0 0, 0 0;
+  box-shadow: var(--hero-box-shadow);
+  border: 0.01px solid transparent; /* transparent border to apply margin to section */
+}
+
+.bg-pure-white {
+  background-color: var(--color-pure-white);
+  border: 0.01px solid transparent; /* transparent border to apply margin to section */
+}

@@ -4,6 +4,8 @@
 form {
   display: grid;
   gap: 2rem 3rem;
+  max-width: 85rem;
+  margin: 0 auto;
 }
 
 label {
