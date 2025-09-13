@@ -6,6 +6,18 @@ collapsibles.forEach((item) =>
   })
 );
 
+const navItems = document.querySelectorAll(".nav__list__item");
+
+navItems.forEach((item) => {
+  item.addEventListener("click", function (e) {
+    // Remove 'active' class from all items
+    navItems.forEach((nav) => nav.classList.remove("active"));
+
+    // Add 'active' class to the clicked item
+    this.classList.add("active");
+  });
+});
+
 // Section display active section content as selected
 document.addEventListener("DOMContentLoaded", function () {
   const headers = document.querySelectorAll(".sec-head");

@@ -1,7 +1,9 @@
 /* Variables */
+
 :root {
   --color-primary: rgb(255, 214, 241);
-  --color-primary-50: rgba(255, 214, 241, 0.5);
+  --color-primary-80: rgba(255, 214, 241, 0.8);
+  --color-primary-90: rgba(255, 214, 241, 0.9);
   --color-secondary: rgb(215, 255, 233);
   --color-dark: rgb(38, 41, 47);
   --color-dark-15: rgba(38, 41, 47, 0.15);
@@ -18,4 +20,22 @@
   --hero-border: 10px solid var(--color-pure-white);
   --hero-border-small: 5px solid var(--color-pure-white);
   --hero-box-shadow: 0px 0px 20px 2.5px var(--color-dark-25);
+}
+
+/* Variables - Animations */
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  50%,
+  90% {
+    transform: translateX(-1px);
+  }
+  30%,
+  70% {
+    transform: translateX(1px);
+  }
 }

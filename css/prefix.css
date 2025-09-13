@@ -43,3 +43,7 @@ li {
 body {
   background-color: var(--color-white);
 }
+
+html {
+  scroll-behavior: smooth;
+}

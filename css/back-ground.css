@@ -3,7 +3,7 @@
 
 .bg-primary {
   --off-set: 10px;
-  background-color: var(--color-primary-50);
+  background-color: var(--color-primary-80);
   background-image: radial-gradient(
       circle,
       var(--color-primary) 3px,
@@ -16,6 +16,10 @@
       calc(28.25px + var(--off-set)),
     var(--off-set) var(--off-set), var(--off-set) var(--off-set);
   border: 0.01px solid transparent; /* transparent border to apply margin to section */
+}
+
+.bg-primary--dark {
+  background-color: var(--color-primary-90);
 }
 
 .bg-pure-white {

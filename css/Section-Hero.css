@@ -1,6 +1,6 @@
 /* Hero Section */
 
-.hero-bg {
+.hero {
   border-bottom: 0;
   box-shadow: var(--hero-box-shadow);
 }
@@ -42,7 +42,7 @@
 }
 
 @media screen and (max-width: 900px) {
-  .hero-bg {
+  .hero {
     box-shadow: none;
   }
 
@@ -80,11 +80,13 @@
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 650px) {
   .hero .plain-badge {
     font-size: 1.2rem;
   }
+}
 
+@media screen and (max-width: 425px) {
   .hero__heading {
     font-size: 3rem;
   }

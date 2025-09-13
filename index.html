@@ -7,13 +7,18 @@
     <title>The Postal Company</title>
   </head>
   <body>
-    <!-- SECTION: HERO & NAV -->
-    <div id="hero-bg" class="bg-primary hero-bg" role="presentation">
+    <!-- SECTION: HERO -->
+    <section id="hero" class="bg-primary hero">
       <header class="wrapper">
         <nav class="nav collapsible">
-          <div class="nav__logo">
-            <img src="./assets/images/logo.svg" alt="The Postal Company Logo" />
-          </div>
+          <a href="/">
+            <div class="nav__logo">
+              <img
+                src="./assets/images/logo.svg"
+                alt="The Postal Company Logo"
+              />
+            </div>
+          </a>
           <button class="nav__toggler">
             <svg class="nav__icon">
               <use href="./assets/icons/sprite.svg#menu"></use>
@@ -21,11 +26,13 @@
           </button>
           <div class="nav__menu collapsible__content">
             <ul class="nav__list">
-              <li class="nav__list__item nav__active"><a href="">Home</a></li>
-              <li class="nav__list__item"><a href="">Solutions</a></li>
-              <li class="nav__list__item"><a href="">Pricing</a></li>
+              <li class="nav__list__item active"><a href="/">Home</a></li>
               <li class="nav__list__item">
-                <a href="">
+                <a href="#solutions">Solutions</a>
+              </li>
+              <li class="nav__list__item"><a href="#pricing">Pricing</a></li>
+              <li class="nav__list__item">
+                <a href="/order.html">
                   <button class="nav__button">Get Started</button>
                 </a>
               </li>
@@ -34,95 +41,90 @@
         </nav>
         <!-- END: .nav - wrapper -->
       </header>
-      <section id="hero" class="hero">
-        <div class="wrapper">
-          <div class="plain-badge cap">
-            Get Started Now - Send Your First Campaign
-          </div>
-          <h1 class="hero__heading cap">
-            Postcards: Your New <br />
-            Untapped Revenue Booster
-          </h1>
-          <p class="hero__message FS-S-N-18-16 cap">
-            boost revenue while cutting marketing costs keep connections alive
-            through the power of direct mail
-          </p>
-          <p class="hero__cta FS-G-B-20-16 cap">
-            unlock the power of direct mail marketing
-          </p>
-          <div class="btn-group">
-            <a href="">
-              <button class="btn">
-                Get Started
-                <span class="icon-container round small primary">
-                  <svg class="icon">
-                    <use
-                      href="./assets/icons/sprite.svg#long-arrow-right"
-                    ></use>
-                  </svg>
-                </span>
-              </button>
-            </a>
-            <a href="">
-              <button class="btn">
-                Schedule a Call
-                <span class="icon-container round small secondary">
-                  <svg class="icon">
-                    <use href="./assets/icons/sprite.svg#call"></use>
-                  </svg>
-                </span>
-              </button>
-            </a>
-          </div>
+      <div class="wrapper">
+        <div class="plain-badge cap">
+          Get Started Now - Send Your First Campaign
         </div>
-        <!-- END: .hero - wrapper -->
-        <!-- .hero__images not wrapped to span full width -->
-        <div class="hero__images">
-          <div class="hero__image__left">
-            <picture>
-              <source
-                type="image/webp"
-                srcset="./assets/images/postcards/glow-essence.webp"
-              />
-              <source
-                type="image/jpg"
-                srcset="./assets/images/postcards/glow-essence.jpg"
-              />
-              <img src="./assets/images/postcards/glow-essence.jpg" alt="" />
-            </picture>
-          </div>
-          <div class="hero__image__center">
-            <picture>
-              <source
-                type="image/webp"
-                srcset="./assets/images/postcards/ethnicraft.webp"
-              />
-              <source
-                type="image/jpg"
-                srcset="./assets/images/postcards/ethnicraft.jpg"
-              />
-              <img src="./assets/images/postcards/ethnicraft.jpg" alt="" />
-            </picture>
-          </div>
-          <div class="hero__image__right">
-            <picture>
-              <source
-                type="image/webp"
-                srcset="./assets/images/postcards/rangoli.webp"
-              />
-              <source
-                type="image/jpg"
-                srcset="./assets/images/postcards/rangoli.jpg"
-              />
-              <img src="./assets/images/postcards/rangoli.jpg" alt="" />
-            </picture>
-          </div>
+        <h1 class="hero__heading cap">
+          Postcards: Your New <br />
+          Untapped Revenue Booster
+        </h1>
+        <p class="hero__message FS-S-N-18-16 cap">
+          boost revenue while cutting marketing costs keep connections alive
+          through the power of direct mail
+        </p>
+        <p class="hero__cta FS-G-B-20-16 cap">
+          unlock the power of direct mail marketing
+        </p>
+        <div class="btn-group">
+          <a href="/order.html">
+            <button class="btn">
+              Get Started
+              <span class="icon-container round small primary">
+                <svg class="icon">
+                  <use href="./assets/icons/sprite.svg#long-arrow-right"></use>
+                </svg>
+              </span>
+            </button>
+          </a>
+          <a href="#call-back">
+            <button class="btn">
+              Schedule a Call
+              <span class="icon-container round small secondary">
+                <svg class="icon">
+                  <use href="./assets/icons/sprite.svg#call"></use>
+                </svg>
+              </span>
+            </button>
+          </a>
         </div>
-        <!-- END: .hero__images -->
-      </section>
-      <!-- END: <section> .hero -->
-    </div>
-    <!-- END-SECTION: HERO & NAV (.bg-primary) -->
+      </div>
+      <!-- END: .hero - wrapper -->
+      <!-- .hero__images not wrapped to span full width -->
+      <div class="hero__images">
+        <div class="hero__image__left">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="./assets/images/postcards/glow-essence.webp"
+            />
+            <source
+              type="image/jpg"
+              srcset="./assets/images/postcards/glow-essence.jpg"
+            />
+            <img src="./assets/images/postcards/glow-essence.jpg" alt="" />
+          </picture>
+        </div>
+        <div class="hero__image__center">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="./assets/images/postcards/ethnicraft.webp"
+            />
+            <source
+              type="image/jpg"
+              srcset="./assets/images/postcards/ethnicraft.jpg"
+            />
+            <img src="./assets/images/postcards/ethnicraft.jpg" alt="" />
+          </picture>
+        </div>
+        <div class="hero__image__right">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="./assets/images/postcards/rangoli.webp"
+            />
+            <source
+              type="image/jpg"
+              srcset="./assets/images/postcards/rangoli.jpg"
+            />
+            <img src="./assets/images/postcards/rangoli.jpg" alt="" />
+          </picture>
+        </div>
+      </div>
+      <!-- END: .hero__images -->
+    </section>
+    <!-- END-SECTION: HERO (.bg-primary) -->
     <!-- * ----- * ----- * ----- * ----- * ----- * ----- * ----- * ----- * ----- * ----- * ----- * ----- * -->
     <!-- SECTION: INTRODUCTION -->
     <section id="intro" class="intro wrapper">
@@ -187,7 +189,7 @@
           Discover the TPC Advantage - Start Your Campaign Now
         </p>
         <div class="btn-group">
-          <a href="">
+          <a href="/order.html">
             <button class="btn">
               Get Started
               <span class="icon-container round small primary">
@@ -197,7 +199,7 @@
               </span>
             </button>
           </a>
-          <a href="">
+          <a href="#call-back">
             <button class="btn">
               Schedule a Call
               <span class="icon-container round small secondary">
@@ -490,7 +492,7 @@
             </p>
             <div class="cta-media-card__content__btn">
               <div class="btn-group">
-                <a href="">
+                <a href="/order.html">
                   <button class="btn">
                     Get Started
                     <span class="icon-container round small primary">
@@ -502,7 +504,7 @@
                     </span>
                   </button>
                 </a>
-                <a href="">
+                <a href="#call-back">
                   <button class="btn">
                     Schedule a Call
                     <span class="icon-container round small secondary">
@@ -551,7 +553,7 @@
             </p>
             <div class="cta-media-card__content__btn">
               <div class="btn-group">
-                <a href="">
+                <a href="/order.html">
                   <button class="btn">
                     Get Started
                     <span class="icon-container round small primary">
@@ -563,7 +565,7 @@
                     </span>
                   </button>
                 </a>
-                <a href="">
+                <a href="#call-back">
                   <button class="btn">
                     Schedule a Call
                     <span class="icon-container round small secondary">
@@ -627,7 +629,7 @@
           </div>
         </div>
         <div class="btn-group">
-          <a href="">
+          <a href="/order.html">
             <button class="btn">
               Get Started
               <span class="icon-container round small primary">
@@ -637,7 +639,7 @@
               </span>
             </button>
           </a>
-          <a href="">
+          <a href="#call-back">
             <button class="btn">
               Schedule a Call
               <span class="icon-container round small secondary">
@@ -665,7 +667,7 @@
               the cost compared to digital ad spend.
             </p>
             <div class="btn-group">
-              <a href="">
+              <a href="/order.html">
                 <button class="btn">
                   Get Started
                   <span class="icon-container round small primary">
@@ -677,7 +679,7 @@
                   </span>
                 </button>
               </a>
-              <a href="">
+              <a href="#call-back">
                 <button class="btn">
                   Schedule a Call
                   <span class="icon-container round small secondary">
@@ -794,7 +796,7 @@
           Place your order today and let us handle the rest
         </p>
         <div class="btn-group">
-          <a href="">
+          <a href="/order.html">
             <button class="btn">
               Get Started
               <span class="icon-container round small primary">
@@ -804,7 +806,7 @@
               </span>
             </button>
           </a>
-          <a href="">
+          <a href="#call-back">
             <button class="btn">
               Schedule a Call
               <span class="icon-container round small secondary">
@@ -962,7 +964,7 @@
         Lock in these special rates today! Start your campaign now
       </p>
       <div class="btn-group">
-        <a href="">
+        <a href="/order.html">
           <button class="btn">
             Get Started
             <span class="icon-container round small primary">
@@ -972,7 +974,7 @@
             </span>
           </button>
         </a>
-        <a href="">
+        <a href="#call-back">
           <button class="btn">
             Schedule a Call
             <span class="icon-container round small secondary">
@@ -1560,7 +1562,7 @@
         assistance!
       </p>
       <div class="btn-group">
-        <a href="">
+        <a href="/order.html">
           <button class="btn">
             Get Started
             <span class="icon-container round small primary">
@@ -1570,7 +1572,7 @@
             </span>
           </button>
         </a>
-        <a href="">
+        <a href="#call-back">
           <button class="btn">
             Schedule a Call
             <span class="icon-container round small secondary">
@@ -1585,7 +1587,7 @@
     <!-- END-SECTION: FAQs -->
     <!-- * ----- * ----- * ----- * ----- * ----- * ----- * ----- * ----- * ----- * ----- * ----- * ----- * -->
     <!-- SECTION: Call Back -->
-    <div class="bg-primary" role="presentation">
+    <div class="bg-primary bg-primary--dark" role="presentation">
       <section id="call-back" class="wrapper">
         <h2 class="cap">Request Call Back</h2>
         <!-- Landing Page Form -->
@@ -1652,14 +1654,22 @@
     <footer>
       <div class="footer">
         <div class="footer__logo">
-          <img src="./assets/images/logo.svg" alt="The Postal Company Logo" />
+          <a href="/"
+            ><img src="./assets/images/logo.svg" alt="The Postal Company Logo"
+          /></a>
         </div>
         <div class="footer__menu">
           <ul class="footer__list">
-            <li class="footer__list-item cap"><a href="">Home</a></li>
-            <li class="footer__list-item cap"><a href="">Solutions</a></li>
-            <li class="footer__list-item cap"><a href="">Pricing</a></li>
-            <li class="footer__list-item cap"><a href="">Contact Us</a></li>
+            <li class="footer__list-item cap"><a href="/">Home</a></li>
+            <li class="footer__list-item cap">
+              <a href="#solutions">Solutions</a>
+            </li>
+            <li class="footer__list-item cap">
+              <a href="#pricing">Pricing</a>
+            </li>
+            <li class="footer__list-item cap">
+              <a href="#call-back">Contact Us</a>
+            </li>
           </ul>
         </div>
         <div class="footer__social">

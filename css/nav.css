@@ -33,7 +33,7 @@
   color: var(--color-dark-50);
 }
 
-.nav__active {
+.nav__list__item.active {
   color: var(--color-dark);
 }
 
@@ -44,6 +44,13 @@
   font-weight: bold;
   padding: 1.5rem 3rem;
   border-radius: 3rem;
+  transition: all 0.3s ease-out;
+}
+
+.nav__button:hover {
+  cursor: pointer;
+  animation: shake 0.5s ease-in-out infinite;
+  animation-delay: 0.3s;
 }
 
 .nav__icon {
