@@ -2,9 +2,11 @@
 
 :root {
   --color-primary: rgb(255, 214, 241);
+  --color-primary-25: rgb(255, 214, 241, 0.25);
   --color-primary-80: rgba(255, 214, 241, 0.8);
   --color-primary-90: rgba(255, 214, 241, 0.9);
   --color-secondary: rgb(215, 255, 233);
+  --color-warning: rgb(247, 144, 9);
   --color-dark: rgb(38, 41, 47);
   --color-dark-15: rgba(38, 41, 47, 0.15);
   --color-dark-25: rgba(38, 41, 47, 0.25);

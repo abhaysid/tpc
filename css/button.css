@@ -12,7 +12,7 @@
   justify-content: space-between;
   padding-right: 0.75rem;
   padding-left: 2.8rem;
-  transform: border 0.3s ease-in-out;
+  transition: border 0.3s ease-in-out;
 }
 
 .btn:hover {
@@ -46,4 +46,34 @@
   .btn-group .btn {
     flex-grow: 1;
   }
+}
+
+.plain-btn {
+  margin: auto;
+  height: 6rem;
+  border-radius: 1rem;
+  border: var(--border);
+  background-color: var(--color-pure-white);
+  font-size: 2rem;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plain-btn:hover {
+  cursor: pointer;
+  border: var(--border-hover);
+  transform: translateY(-2px);
+}
+
+.plain-btn.primary {
+  padding: 0 3rem;
+  background-color: var(--color-primary);
+}
+
+.plain-btn.secondary {
+  padding: 3rem 5rem;
+  background-color: var(--color-secondary);
 }

@@ -15,8 +15,8 @@ html {
 
 @font-face {
   font-family: "Geist";
-  src: url("./assets/fonts/Geist-Bold.woff2") format("woff2"),
-    url("./assets/fonts/Geist-Bold.woff") format("woff");
+  src: url("../assets/fonts/Geist-Bold.woff2") format("woff2"),
+    url("../assets/fonts/Geist-Bold.woff") format("woff");
   font-weight: bold;
   font-display: var(--font-loading-style);
   font-style: normal;
@@ -24,8 +24,8 @@ html {
 
 @font-face {
   font-family: "Satoshi";
-  src: url("./assets/fonts/Satoshi-Regular.woff2") format("woff2"),
-    url("./assets/fonts/Satoshi-Regular.woff") format("woff");
+  src: url("../assets/fonts/Satoshi-Regular.woff2") format("woff2"),
+    url("../assets/fonts/Satoshi-Regular.woff") format("woff");
   font-weight: normal;
   font-display: var(--font-loading-style);
   font-style: normal;
@@ -87,7 +87,7 @@ p {
   text-transform: capitalize;
 }
 
-/* Other Style Identified kept for future reference */
+/* Fonts varying sizes by view-width */
 
 /* Font Style: Satoshi Normal 18px to 16px */
 .FS-S-N-18-16 {
@@ -133,4 +133,36 @@ p {
   .FS-G-B-24-20 {
     font-size: 2rem;
   }
+}
+
+/* Fonts with same sizes across */
+
+.FS-G-B-48 {
+  font-family: "Geist", sans-serif;
+  font-weight: bold;
+  font-size: 4.8rem;
+}
+
+.FS-G-B-32 {
+  font-family: "Geist", sans-serif;
+  font-weight: bold;
+  font-size: 3.2rem;
+}
+
+.FS-G-B-24 {
+  font-family: "Geist", sans-serif;
+  font-weight: bold;
+  font-size: 2.4rem;
+}
+
+.FS-G-B-20 {
+  font-family: "Geist", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.FS-G-B-18 {
+  font-family: "Geist", sans-serif;
+  font-weight: bold;
+  font-size: 1.8rem;
 }

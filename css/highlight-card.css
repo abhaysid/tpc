@@ -1,0 +1,32 @@
+/* Highlight Card */
+
+.highlight-card {
+  background-image: linear-gradient(
+    to bottom left,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+  padding: 3rem;
+  border: var(--border);
+  border-radius: 2rem;
+}
+
+.highlight-card__header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.highlight-card__header__icon-heading {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.highlight-card__header__icon-heading .icon {
+  margin: 0 1rem;
+}
+
+.highlight-card__text P:not(:last-child) {
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,26 @@
+/* Notification Banner */
+
+.notification-banner {
+  background-color: var(--color-warning);
+  color: var(--color-pure-white);
+  text-align: center;
+  border-radius: 2rem;
+  padding: 2rem;
+}
+
+.notification-banner__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.notification-banner .icon {
+  margin: 0 1rem;
+}
+
+@media screen and (max-width: 650px) {
+  .notification-banner {
+    padding: 2rem 1rem;
+  }
+}

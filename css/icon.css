@@ -42,3 +42,7 @@
   background-color: transparent;
   border: var(--border);
 }
+
+.double-icon-flip .icon:nth-of-type(2) {
+  transform: scaleX(-1);
+}

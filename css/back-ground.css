@@ -26,3 +26,8 @@
   background-color: var(--color-pure-white);
   border: 0.01px solid transparent; /* transparent border to apply margin to section */
 }
+
+.bg-full-primary-25 {
+  background-color: var(--color-primary-25);
+  border: 0.01px solid transparent; /* transparent border to apply margin to section */
+}
