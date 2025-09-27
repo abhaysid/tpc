@@ -21,7 +21,7 @@ label > * {
   font-size: 1.6rem;
   padding: 2rem;
   width: 100%;
-  margin-top: 0.75rem;
+  margin-top: 0.8rem;
 }
 
 form ::placeholder {
@@ -43,4 +43,33 @@ textarea {
 form button {
   margin-top: 5rem;
   justify-self: center;
+}
+
+select {
+  appearance: none;
+}
+
+select {
+  color: var(--color-dark-50);
+}
+
+/* When <select> has a value then class="selected" is applied by JS */
+select.selected {
+  color: var(--color-dark);
+}
+
+label.drop {
+  position: relative;
+}
+
+label.drop::after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  mask: var(--icon-drop) no-repeat center / contain;
+  background-color: var(--color-dark-50);
+  position: absolute;
+  top: 50%;
+  right: 5px;
 }

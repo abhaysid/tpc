@@ -42,3 +42,5 @@
 
 /* Pages */
 @import "order.css";
+@import "order-place.css";
+@import "sign-up.css";

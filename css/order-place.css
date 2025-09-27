@@ -1,0 +1,47 @@
+/* Place Order Interest */
+
+.order-place-container {
+  min-width: 100vw;
+  min-height: 100vh;
+  padding: 5rem 2rem;
+}
+
+.order-place__heading {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.order-place__caption {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.order-place__form__name-block {
+  display: grid;
+  grid-template-columns: 15% 1fr 1fr;
+  gap: 2rem 1rem;
+}
+
+.order-place__form__contact-block {
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  gap: 2rem 1rem;
+}
+
+@media screen and (max-width: 650px) {
+  .order-place-container {
+    padding: 3rem 1.5rem;
+  }
+
+  .order-place__form__name-block {
+    grid-template-columns: 25% 1fr;
+  }
+
+  .order-place__form__name-block :last-child {
+    grid-column: 1/-1;
+  }
+
+  .order-place__form__contact-block {
+    grid-template-columns: 1fr;
+  }
+}

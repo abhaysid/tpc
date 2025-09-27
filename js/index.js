@@ -69,3 +69,14 @@ tel.addEventListener("keydown", (e) => {
     e.preventDefault();
   }
 });
+
+// Apply class="selected" to <select> when there is a value
+document.querySelectorAll("select").forEach((selectEl) => {
+  selectEl.addEventListener("change", function () {
+    if (this.value !== "") {
+      this.classList.add("selected");
+    } else {
+      this.classList.remove("selected");
+    }
+  });
+});

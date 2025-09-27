@@ -7,6 +7,112 @@
     <title>Place Order Interest</title>
   </head>
   <body>
-    <h1>Place Order Interest</h1>
+    <div class="order-place-container bg-full-primary">
+      <div class="order-place">
+        <h2 class="order-place__heading cap">Place Your Order Interest</h2>
+        <p class="order-place__caption">
+          We'll reach out to you when production capacity opens up
+        </p>
+        <form class="order-place__form" action="" method="">
+          <div class="order-place__form__name-block">
+            <label class="drop">
+              Title
+              <select name="title" id="title">
+                <option value="" disabled selected hidden>Title</option>
+                <option value="Mr">Mr.</option>
+                <option value="Ms">Ms.</option>
+                <option value="Mrs">Mrs.</option>
+              </select>
+            </label>
+            <label>
+              First Name*
+              <input
+                type="text"
+                id="Fname"
+                name="Fname"
+                placeholder="Enter Your First Name"
+                required
+                minlength="3"
+                maxlength="60"
+              />
+            </label>
+            <label>
+              Last Name
+              <input
+                type="text"
+                id="Lname"
+                name="Lname"
+                placeholder="Enter Your Last Name"
+                minlength="3"
+                maxlength="60"
+              />
+            </label>
+          </div>
+          <div class="order-place__form__contact-block">
+            <label>
+              <!-- "+91 " automatically inserted by javascript refer index.js -->
+              Phone*
+              <input
+                type="tel"
+                pattern="[0-9+ ]+"
+                id="tel"
+                name="phone"
+                placeholder="Enter Your Phone Number"
+                required
+                minlength="14"
+                maxlength="14"
+              />
+            </label>
+            <label>
+              Email*
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter Your Email"
+                required
+                minlength="5"
+                maxlength="254"
+              />
+            </label>
+          </div>
+          <label>
+            Company Name*
+            <input
+              type="text"
+              id="Cname"
+              name="Cname"
+              placeholder="Enter Your Company Name"
+              required
+              minlength="10"
+              maxlength="150"
+            />
+          </label>
+          <label class="drop">
+            Choose Campaign Size:*
+            <select name="campaign" id="campaign" required>
+              <option value="" disabled selected hidden>
+                Select Postcard Quantity
+              </option>
+              <option value="500">500 Cards</option>
+              <option value="500-1000">500 to 1000 Cards</option>
+              <option value="1000-1500">1000 to 1500 Cards</option>
+              <option value="1500+">1500 & Above Cards</option>
+            </select>
+          </label>
+          <button type="submit" class="btn">
+            Place Order
+            <span class="icon-container round small primary">
+              <svg class="icon">
+                <use href="./assets/icons/sprite.svg#long-arrow-right"></use>
+              </svg>
+            </span>
+          </button>
+        </form>
+      </div>
+      <!-- END: .order-place -->
+    </div>
+    <!-- END: .order-place-container -->
+    <script src="./js/index.js"></script>
   </body>
 </html>
