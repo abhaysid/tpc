@@ -82,14 +82,34 @@ document.querySelectorAll("select").forEach((selectEl) => {
 });
 
 // Form Submission
-function formSubmitted(event) {
+async function formSubmitted(event) {
   event.preventDefault(); // prevent page reload
 
-  // find the closest .submission-box to this form
-  const submissionBox = event.target.closest(".submission-box");
+  const form = event.target;
+  const submissionBox = form.closest(".submission-box");
+  const formData = new FormData(form);
 
-  // add "submitted" class only to this box
-  submissionBox.classList.add("submitted");
+  try {
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: {
+        Accept: "application/json", // Formspree needs this for JSON response
+      },
+    });
+
+    if (response.ok) {
+      // success: hide form, show message
+      submissionBox.classList.add("submitted");
+      form.reset(); // clear form
+    } else {
+      // error handling
+      alert("Oops! Something went wrong with submission.");
+    }
+  } catch (error) {
+    console.error("Error:", error);
+    alert("Network error. Please try again later.");
+  }
 }
 
 // attach listener to all forms
