@@ -1,0 +1,42 @@
+/* Submission Box */
+
+/* 
+Parent: .submission-box
+Children: .submission-content & .submission-message
+.submission-box when in form and gets submitted will add class .submitted to Parent
+*/
+
+.submission-box {
+  position: relative; /* set position of the Parent */
+}
+
+/* Before Submission: when Parent has only .submission-box */
+
+.submission-content {
+  z-index: 999;
+  transition: all 0.25s ease-in-out;
+}
+
+.submission-message {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  z-index: -999;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+/* After Submission: when Parent has both .submission-box .submitted */
+
+.submission-box.submitted .submission-content {
+  position: relative;
+  z-index: -999;
+  opacity: 0;
+}
+
+.submission-box.submitted .submission-message {
+  z-index: 999;
+  opacity: 1;
+}

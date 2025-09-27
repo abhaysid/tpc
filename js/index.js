@@ -80,3 +80,19 @@ document.querySelectorAll("select").forEach((selectEl) => {
     }
   });
 });
+
+// Form Submission
+function formSubmitted(event) {
+  event.preventDefault(); // prevent page reload
+
+  // find the closest .submission-box to this form
+  const submissionBox = event.target.closest(".submission-box");
+
+  // add "submitted" class only to this box
+  submissionBox.classList.add("submitted");
+}
+
+// attach listener to all forms
+document.querySelectorAll(".submission-box form").forEach((form) => {
+  form.addEventListener("submit", formSubmitted);
+});

@@ -25,6 +25,33 @@
   animation-delay: 0.3s;
 }
 
+/* Small Buttons */
+
+.btn.small {
+  width: 14rem;
+}
+
+/* Buttons with left icon */
+
+.btn.left-icon .icon-container {
+  order: -1;
+}
+
+.btn.left-icon {
+  padding-right: 2.8rem;
+  padding-left: 0.75rem;
+}
+
+/* Buttons with dark background */
+
+.btn.dark {
+  background-color: var(--color-dark-15);
+}
+
+.btn.dark .icon-container {
+  background-color: var(--color-secondary);
+}
+
 /* Two buttons grouped together */
 
 .btn-group {

@@ -1,0 +1,23 @@
+/* Submission Message */
+
+.submission-message {
+  color: var(--color-dark-75);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.submission-message__heading {
+  font-size: 2.6rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.submission-message__caption {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  text-align: center;
+}
