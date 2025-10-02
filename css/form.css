@@ -72,4 +72,9 @@ label.drop::after {
   position: absolute;
   top: 50%;
   right: 5px;
+  pointer-events: none;
+}
+
+label.drop select {
+  cursor: pointer;
 }

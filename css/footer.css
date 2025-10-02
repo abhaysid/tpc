@@ -27,14 +27,57 @@
 
 .footer__social {
   display: flex;
+  margin-bottom: 5rem;
 }
 
 .footer__social-icon {
   margin: 0 0.5rem;
 }
 
+.footer__contact {
+  padding: 0 5rem;
+  font-size: 1.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem 2rem;
+  color: var(--color-dark-25);
+}
+
+.footer__contact span {
+  margin: 0 0.5rem;
+  color: var(--color-dark-50);
+}
+
 .footer__copyright {
   text-align: center;
   padding: 2rem 0;
   border-top: var(--border);
+}
+
+.footer__whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  border-radius: 5rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: scale 0.2s ease-in-out;
+}
+
+.footer__whatsapp:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+
+.footer__whatsapp .icon {
+  fill: #ffffff;
+}
+
+.footer__whatsapp:hover .icon {
+  animation: shake 0.5s ease-in-out infinite;
+  animation-delay: 0.3s;
 }

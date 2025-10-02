@@ -39,6 +39,7 @@
 
 .nav__button {
   background-color: var(--color-primary);
+  color: var(--color-dark);
   border: 0;
   font-size: 1.8rem;
   font-weight: bold;

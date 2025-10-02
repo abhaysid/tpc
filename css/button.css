@@ -96,11 +96,11 @@
 }
 
 .plain-btn.primary {
-  padding: 0 3rem;
+  width: 28rem;
   background-color: var(--color-primary);
 }
 
 .plain-btn.secondary {
-  padding: 3rem 5rem;
+  width: 38rem;
   background-color: var(--color-secondary);
 }
