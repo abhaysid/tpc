@@ -4,13 +4,18 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2vw;
-  container-type: inline-size;
-  container-name: media-card-grid;
+  width: 100%;
 }
 
-/* grid at 2 columns changes the order to match the primary and secondary icons coloring */
+/* 
+grid at 2 columns changes the order to match the primary and secondary icons coloring
 
-@container media-card-grid (max-width: calc(900px + 4vw)) and (min-width: calc(600px + 2vw)) {
+actual width of the .media-card-grid is 76.66667 vw which is coming from .wrapper
+calc @ 1183 -> 2 column starts .media-card-grid can no longer fits 3 columns of 300px hence the max-width
+calc @ 750 -> 2 column ends .media-card-grid at max width to fit 2 columns hence the min-width
+*/
+
+@media screen and (max-width: 1183px) and (min-width: 750px) {
   .media-card-grid > :nth-child(2) {
     order: -1;
   }

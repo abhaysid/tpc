@@ -4,6 +4,7 @@
   width: 22.4rem;
   height: 5.6rem;
   background-color: var(--color-pure-white);
+  color: var(--color-dark);
   border: var(--border);
   border-radius: 5.6rem;
   font-weight: bold;
@@ -81,6 +82,7 @@
   border-radius: 1rem;
   border: var(--border);
   background-color: var(--color-pure-white);
+  color: var(--color-dark);
   font-size: 2rem;
   font-weight: bold;
   transition: all 0.3s ease-in-out;
@@ -96,11 +98,13 @@
 }
 
 .plain-btn.primary {
-  width: 28rem;
+  max-width: 28rem;
   background-color: var(--color-primary);
+  text-align: center;
 }
 
 .plain-btn.secondary {
-  width: 38rem;
+  max-width: 38rem;
   background-color: var(--color-secondary);
+  text-align: center;
 }
